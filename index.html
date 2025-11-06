@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Black Chapter – Torry Milano</title>
+  <meta name="description" content="The Black Chapter: an exclusive Torry Milano experience. Reserve your handcrafted Italian suit – limited Loro Piana and Drapers availability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Milano Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M12 2l9 5v10l-9 5l-9-5V7z" opacity=".15"/><path fill="currentColor" d="M12 22l-9-5V7l9 5z"/><path fill="currentColor" d="M12 22l9-5V7l-9 5z"/></svg>
+        <span>Milano</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#configure">Configure</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary" href="#configure">Reserve my spot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="hero hero-black">
+      <div class="hero-media-bg" aria-hidden="true">
+        <!-- Placeholder: replace with your video/image -->
+        <!-- Example for later: <video src="./assets/media/black-chapter.mp4" autoplay muted loop playsinline></video> -->
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>The Black Chapter</h1>
+          <p class="lead">An exclusive Torry Milano experience. Tailored in Italy. Reserved for a few.</p>
+          <p class="sublead">A once in a lifetime opportunity to create and own a hand-crafted Italian suit, tailored to your exact measurements.</p>
+          <p class="muted">Only 10 Loro Piana and 20 Drapers suits available.</p>
+
+          <div id="urgency" class="urgency">
+            <div id="bf-timer" class="timer" data-start="" data-end="">
+              <div class="timer-label">Black Friday Window</div>
+              <div class="timer-row">
+                <div class="t-box"><span class="t-num" id="t-days">0</span><span class="t-lbl">Days</span></div>
+                <div class="t-box"><span class="t-num" id="t-hours">0</span><span class="t-lbl">Hours</span></div>
+                <div class="t-box"><span class="t-num" id="t-mins">0</span><span class="t-lbl">Mins</span></div>
+                <div class="t-box"><span class="t-num" id="t-secs">0</span><span class="t-lbl">Secs</span></div>
+              </div>
+              <div id="timer-state" class="timer-state">Starts soon</div>
+            </div>
+            <div class="spots">
+              <div class="spot-item"><strong id="lp-spots">10</strong> Loro Piana suits left</div>
+              <div class="spot-item"><strong id="dr-spots">20</strong> Drapers suits left</div>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="#configure">Reserve my spot</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Configure -->
+    <section id="configure" class="section configure">
+      <div class="container">
+        <header class="section-head">
+          <h2>Configure my custom suit</h2>
+          <p class="disclaimer">This configuration is designed to secure your reservation during The Black Chapter event. Any details, fabric changes, or additional personalizations can be adjusted later during your in‑store fitting appointment with our tailoring specialist. All fittings take place exclusively at our Torry Milano boutique in Băneasa Shopping City, Bucharest or Iulius Mall, Cluj‑Napoca. By completing this configuration and paying the 30% deposit, you’re locking in your exclusive slot and price for a Made to Measure suit handcrafted in Italy.</p>
+        </header>
+
+        <!-- Step 1 – Fabric selection -->
+        <section class="config-step" id="step1" data-step="1">
+          <h3 class="step-title">Step 1 — Choose Your Fabric</h3>
+          <div class="two-col">
+            <article class="card fabric" data-fabric="loro">
+              <div class="card-media fabric-lp" aria-hidden="true"></div>
+              <div class="card-body">
+                <h4>Loro Piana 150s Australis</h4>
+                <p>100% Wool · Made in Italy · 7,999 Lei</p>
+                <button class="btn btn-primary select-fabric" data-fabric="loro">Select Loro Piana</button>
+              </div>
+            </article>
+            <article class="card fabric" data-fabric="drapers">
+              <div class="card-media fabric-dr" aria-hidden="true"></div>
+              <div class="card-body">
+                <h4>Drapers</h4>
+                <p>100% Wool · Drapers Italy · 5,999 Lei</p>
+                <button class="btn btn-primary select-fabric" data-fabric="drapers">Select Drapers</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Step 2 – Model -->
+        <section class="config-step" id="step2" data-step="2" hidden>
+          <h3 class="step-title">Step 2 — Choose Your Model</h3>
+          <div class="two-col">
+            <label class="img-radio">
+              <input type="radio" name="model-choice" value="single" />
+              <div class="img-block model-single" aria-hidden="true"></div>
+              <span>Single-breasted</span>
+            </label>
+            <label class="img-radio">
+              <input type="radio" name="model-choice" value="double" />
+              <div class="img-block model-double" aria-hidden="true"></div>
+              <span>Double-breasted</span>
+            </label>
+          </div>
+          <div class="actions">
+            <button class="btn btn-secondary prev-step" data-prev="1">Back</button>
+            <button class="btn btn-primary next-step" data-next="3">Next</button>
+          </div>
+        </section>
+
+        <!-- Step 3 – Lapel style -->
+        <section class="config-step" id="step3" data-step="3" hidden>
+          <h3 class="step-title">Step 3 — Choose Your Lapel</h3>
+          <div class="three-col">
+            <label class="img-radio">
+              <input type="radio" name="lapel" value="peak" />
+              <div class="img-block lapel-peak" aria-hidden="true"></div>
+              <span>Peak</span>
+            </label>
+            <label class="img-radio">
+              <input type="radio" name="lapel" value="notch" />
+              <div class="img-block lapel-notch" aria-hidden="true"></div>
+              <span>Notch</span>
+            </label>
+            <label class="img-radio">
+              <input type="radio" name="lapel" value="shawl" />
+              <div class="img-block lapel-shawl" aria-hidden="true"></div>
+              <span>Shawl</span>
+            </label>
+          </div>
+
+          <div class="toggle-row">
+            <label class="switch">
+              <input type="checkbox" id="silkLapel" />
+              <span class="slider"></span>
+            </label>
+            <span class="switch-label">Silk Lapel?</span>
+            <select id="lapelWidth" class="select" hidden>
+              <option value="10">Lapel Width 10cm</option>
+              <option value="11">Lapel Width 11cm</option>
+            </select>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-secondary prev-step" data-prev="2">Back</button>
+            <button class="btn btn-primary next-step" data-next="4">Next</button>
+          </div>
+        </section>
+
+        <!-- Step 4 – Lining & Embroidery -->
+        <section class="config-step" id="step4" data-step="4" hidden>
+          <h3 class="step-title">Step 4 — Lining & Embroidery</h3>
+          <div class="two-col">
+            <div>
+              <div class="field-label">Lining color</div>
+              <div class="swatches" role="radiogroup" aria-label="Lining color">
+                <label class="swatch sw-bordeaux"><input type="radio" name="lining" value="bordeaux" /><span></span></label>
+                <label class="swatch sw-dark-green"><input type="radio" name="lining" value="dark-green" /><span></span></label>
+                <label class="swatch sw-black"><input type="radio" name="lining" value="black" /><span></span></label>
+                <label class="swatch sw-bleumarin"><input type="radio" name="lining" value="bleumarin" /><span></span></label>
+                <label class="swatch sw-grey"><input type="radio" name="lining" value="grey" /><span></span></label>
+              </div>
+            </div>
+            <div>
+              <div class="toggle-row">
+                <label class="switch">
+                  <input type="checkbox" id="embroideryToggle" />
+                  <span class="slider"></span>
+                </label>
+                <span class="switch-label">Personalized Embroidery?</span>
+              </div>
+              <label class="field" id="embroideryField" hidden>
+                <span class="field-label">Initials / Name</span>
+                <input type="text" id="embroideryText" placeholder="e.g., A.M." />
+              </label>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn btn-secondary prev-step" data-prev="3">Back</button>
+            <button class="btn btn-primary next-step" data-next="5">Next</button>
+          </div>
+        </section>
+
+        <!-- Step 5 – Add-ons -->
+        <section class="config-step" id="step5" data-step="5" hidden>
+          <h3 class="step-title">Step 5 — Add‑ons</h3>
+          <div class="three-col cards">
+            <label class="card add-on">
+              <div class="card-media addon-shirt" aria-hidden="true"></div>
+              <div class="card-body">
+                <div class="addon-title">Canclini Egyptian Cotton Shirt</div>
+                <div class="addon-price">999 Lei</div>
+                <input type="checkbox" name="addons" value="shirt" />
+              </div>
+            </label>
+            <label class="card add-on">
+              <div class="card-media addon-socks" aria-hidden="true"></div>
+              <div class="card-body">
+                <div class="addon-title">12‑Pair Personalized Socks Box</div>
+                <div class="addon-price">899 Lei</div>
+                <input type="checkbox" name="addons" value="socks12" />
+              </div>
+            </label>
+            <label class="card add-on">
+              <div class="card-media addon-socks-cashmere" aria-hidden="true"></div>
+              <div class="card-body">
+                <div class="addon-title">12‑Pair Cashmere Socks Box</div>
+                <div class="addon-price">1,499 Lei</div>
+                <input type="checkbox" name="addons" value="socks12c" />
+              </div>
+            </label>
+          </div>
+          <div class="actions">
+            <button class="btn btn-secondary prev-step" data-prev="4">Back</button>
+            <button class="btn btn-primary next-step" data-next="6">Review & Reserve</button>
+          </div>
+        </section>
+
+        <!-- Step 6 – Review & Reserve -->
+        <section class="config-step" id="step6" data-step="6" hidden>
+          <h3 class="step-title">Step 6 — Review & Reserve</h3>
+          <p>You’ve completed your configuration. Please fill in your contact details to secure your slot.</p>
+          <div class="two-col">
+            <label class="field">
+              <span class="field-label">Name</span>
+              <input type="text" id="custName" required />
+            </label>
+            <label class="field">
+              <span class="field-label">Email</span>
+              <input type="email" id="custEmail" required />
+            </label>
+            <label class="field">
+              <span class="field-label">Phone</span>
+              <input type="tel" id="custPhone" required />
+            </label>
+          </div>
+          <p class="muted">You will pay a 30% deposit now to confirm your spot. Our team will contact you for your private fitting.</p>
+          <div class="actions">
+            <button class="btn btn-secondary prev-step" data-prev="5">Back</button>
+            <a id="reserveCta" class="btn btn-primary btn-lg" href="#" rel="nofollow">Pay 30% Deposit & Reserve Your Spot</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="section story">
+      <div class="container">
+        <header class="section-head">
+          <h2>Your Suit, Your Story</h2>
+          <p>Each suit is hand‑cut and tailored in Italy using the finest wool fabrics in the world. Availability is strictly limited to 10 Loro Piana and 20 Drapers suits—once they’re gone, the offer closes permanently. Any details can be adjusted later during your fitting. You’ll receive a confirmation email after payment; our team will contact you within 24 hours to schedule your appointment.</p>
+        </header>
+        <a class="btn btn-primary btn-lg" href="#configure">Secure my spot now</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <header class="section-head">
+          <h2>Frequently asked questions</h2>
+          <p>Answers in English and Romanian.</p>
+        </header>
+        <div class="accordion" role="region" aria-label="FAQ accordion">
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq1" id="faq1-label">How do I reserve my suit?</button>
+            </h3>
+            <div id="faq1" class="accordion-panel" role="region" aria-labelledby="faq1-label" hidden>
+              <p>Click “Reserve Your Spot,” complete the 30% deposit, and our team will contact you to confirm your private fitting.</p>
+              <p>Apasă „Rezervă-ți locul”, achită avansul de 30% și echipa noastră te va contacta pentru confirmarea măsurătorilor.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq2" id="faq2-label">Can I customize my suit?</button>
+            </h3>
+            <div id="faq2" class="accordion-panel" role="region" aria-labelledby="faq2-label" hidden>
+              <p>Yes – all suits are fully customizable: model, lapel, lining, embroidery, and fit.</p>
+              <p>Da – toate costumele pot fi personalizate: model, rever, căptușeală, broderie și croială.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq3" id="faq3-label">How long will it take?</button>
+            </h3>
+            <div id="faq3" class="accordion-panel" role="region" aria-labelledby="faq3-label" hidden>
+              <p>Each piece is crafted in Italy and delivered in 4–6 weeks after your fitting.</p>
+              <p>Fiecare piesă este realizată în Italia și livrată în 4–6 săptămâni după măsurători.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq4" id="faq4-label">Is the deposit refundable?</button>
+            </h3>
+            <div id="faq4" class="accordion-panel" role="region" aria-labelledby="faq4-label" hidden>
+              <p>Deposits secure fabric allocation and are non‑refundable after tailoring begins, but fully deductible from the final price.</p>
+              <p>Avansul asigură rezervarea țesăturii și nu este rambursabil după începerea procesului de croitorie, dar se deduce integral din prețul final.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Torry Milano • The Black Chapter</p>
+      <nav aria-label="Footer">
+        <a href="#configure">Configure</a>
+        <a href="#story">Story</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>
