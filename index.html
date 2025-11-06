@@ -37,44 +37,43 @@
 
   <main id="main">
     <!-- Hero -->
-    <section id="hero" class="hero hero-black">
+    <section id="hero" class="hero hero-black" aria-label="Brand banner">
       <div class="hero-media-bg" aria-hidden="true">
         <picture>
-          <source srcset="./assets/img/hero-placeholder.svg" type="image/svg+xml" />
-          <img src="./assets/img/hero-placeholder.svg" alt="Black Chapter hero background placeholder" class="hero-bg-img" />
+          <source srcset="./assets/img/Banner-Torry-.jpg" media="(min-width: 768px)" />
+          <img src="./assets/img/Banner-Torry-.jpg" alt="Torry Milano – The Black Chapter banner" class="hero-bg-img" />
         </picture>
-        <!-- If you add a video, replace picture above with:
-        <video class="hero-video" src="./assets/img/hero.mp4" autoplay muted loop playsinline poster="./assets/img/hero.jpg"></video>
-        -->
         <div class="hero-overlay"></div>
       </div>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>The Black Chapter</h1>
-          <p class="lead">An exclusive Torry Milano experience. Tailored in Italy. Reserved for a few.</p>
-          <p class="sublead">A once in a lifetime opportunity to create and own a hand-crafted Italian suit, tailored to your exact measurements.</p>
-          <p class="muted">Only 10 Loro Piana and 20 Drapers suits available.</p>
+    </section>
 
-          <div id="urgency" class="urgency">
-            <div id="bf-timer" class="timer" data-start="" data-end="">
-              <div class="timer-label">Black Friday Window</div>
-              <div class="timer-row">
-                <div class="t-box"><span class="t-num" id="t-days">0</span><span class="t-lbl">Days</span></div>
-                <div class="t-box"><span class="t-num" id="t-hours">0</span><span class="t-lbl">Hours</span></div>
-                <div class="t-box"><span class="t-num" id="t-mins">0</span><span class="t-lbl">Mins</span></div>
-                <div class="t-box"><span class="t-num" id="t-secs">0</span><span class="t-lbl">Secs</span></div>
-              </div>
-              <div id="timer-state" class="timer-state">Starts soon</div>
+    <!-- Chapter Intro (moved out of hero for standalone image banner) -->
+    <section id="chapter" class="chapter-intro section">
+      <div class="container intro-inner">
+        <header class="chapter-head">
+          <h1 class="chapter-title">The Black Chapter</h1>
+          <p class="chapter-lead">An exclusive Torry Milano experience. Tailored in Italy. Reserved for a few.</p>
+          <p class="chapter-sub">A once in a lifetime opportunity to create and own a hand-crafted Italian suit, tailored to your exact measurements.</p>
+          <p class="chapter-meta">Only <strong>10</strong> Loro Piana and <strong>20</strong> Drapers suits available.</p>
+        </header>
+        <div id="urgency" class="urgency">
+          <div id="bf-timer" class="timer" data-start="" data-end="">
+            <div class="timer-label">Black Friday Window</div>
+            <div class="timer-row">
+              <div class="t-box"><span class="t-num" id="t-days">0</span><span class="t-lbl">Days</span></div>
+              <div class="t-box"><span class="t-num" id="t-hours">0</span><span class="t-lbl">Hours</span></div>
+              <div class="t-box"><span class="t-num" id="t-mins">0</span><span class="t-lbl">Mins</span></div>
+              <div class="t-box"><span class="t-num" id="t-secs">0</span><span class="t-lbl">Secs</span></div>
             </div>
-            <div class="spots">
-              <div class="spot-item"><strong id="lp-spots">10</strong> Loro Piana suits left</div>
-              <div class="spot-item"><strong id="dr-spots">20</strong> Drapers suits left</div>
-            </div>
+            <div id="timer-state" class="timer-state">Starts soon</div>
           </div>
-
-          <div class="cta-row">
-            <a class="btn btn-primary btn-lg" href="#configure">Reserve my spot</a>
+          <div class="spots">
+            <div class="spot-item"><strong id="lp-spots">10</strong> Loro Piana suits left</div>
+            <div class="spot-item"><strong id="dr-spots">20</strong> Drapers suits left</div>
           </div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="#configure">Reserve my spot</a>
         </div>
       </div>
     </section>
@@ -93,7 +92,7 @@
           <div class="two-col">
             <article class="card fabric" data-fabric="loro">
               <div class="card-media fabric-lp" aria-hidden="true">
-                <img src="./assets/img/fabric-loro.jpg" alt="Loro Piana 150s fabric close-up" loading="lazy" />
+                <img src="./assets/img/Tessuto-in-lana-super-150s-blu-Loro-Piana-Il-Vecchio-Drappiere-Milano-600x800.jpeg" alt="Loro Piana 150s fabric close-up" loading="lazy" />
               </div>
               <div class="card-body">
                 <h4>Loro Piana 150s Australis</h4>
@@ -103,7 +102,7 @@
             </article>
             <article class="card fabric" data-fabric="drapers">
               <div class="card-media fabric-dr" aria-hidden="true">
-                <img src="./assets/img/fabric-drapers.jpg" alt="Drapers wool fabric close-up" loading="lazy" />
+                <img src="./assets/img/20240821_drapers_36.jpg" alt="Drapers wool fabric close-up" loading="lazy" />
               </div>
               <div class="card-body">
                 <h4>Drapers</h4>
@@ -121,14 +120,14 @@
             <label class="img-radio">
               <input type="radio" name="model-choice" value="single" />
               <div class="img-block model-single" aria-hidden="true">
-                <img src="./assets/img/model-single.jpg" alt="Single-breasted suit" loading="lazy" />
+                <img src="./assets/img/single%20breasted.jpeg" alt="Single-breasted suit" loading="lazy" />
               </div>
               <span>Single-breasted</span>
             </label>
             <label class="img-radio">
               <input type="radio" name="model-choice" value="double" />
               <div class="img-block model-double" aria-hidden="true">
-                <img src="./assets/img/model-double.jpg" alt="Double-breasted suit" loading="lazy" />
+                <img src="./assets/img/double%20breasted%20suit2.jpeg" alt="Double-breasted suit" loading="lazy" />
               </div>
               <span>Double-breasted</span>
             </label>
@@ -153,14 +152,14 @@
             <label class="img-radio">
               <input type="radio" name="lapel" value="notch" />
               <div class="img-block lapel-notch" aria-hidden="true">
-                <img src="./assets/img/lapel-notch.jpg" alt="Notch lapel" loading="lazy" />
+                <img src="./assets/img/lapel-Notch.jpg" alt="Notch lapel" loading="lazy" />
               </div>
               <span>Notch</span>
             </label>
             <label class="img-radio">
               <input type="radio" name="lapel" value="shawl" />
               <div class="img-block lapel-shawl" aria-hidden="true">
-                <img src="./assets/img/lapel-shawl.jpg" alt="Shawl lapel" loading="lazy" />
+                <img src="./assets/img/lapel-Shawl.jpg" alt="Shawl lapel" loading="lazy" />
               </div>
               <span>Shawl</span>
             </label>
@@ -224,7 +223,7 @@
           <div class="three-col cards">
             <label class="card add-on">
               <div class="card-media addon-shirt" aria-hidden="true">
-                <img src="./assets/img/addon-shirt.jpg" alt="Canclini Egyptian Cotton Shirt" loading="lazy" />
+                <img src="./assets/img/shirts.jpg" alt="Canclini Egyptian Cotton Shirt" loading="lazy" />
               </div>
               <div class="card-body">
                 <div class="addon-title">Canclini Egyptian Cotton Shirt</div>
@@ -234,7 +233,7 @@
             </label>
             <label class="card add-on">
               <div class="card-media addon-socks" aria-hidden="true">
-                <img src="./assets/img/addon-socks.jpg" alt="12-Pair Personalized Socks Box" loading="lazy" />
+                <img src="./assets/img/single_double.jpeg" alt="12-Pair Personalized Socks Box" loading="lazy" />
               </div>
               <div class="card-body">
                 <div class="addon-title">12‑Pair Personalized Socks Box</div>
@@ -244,7 +243,7 @@
             </label>
             <label class="card add-on">
               <div class="card-media addon-socks-cashmere" aria-hidden="true">
-                <img src="./assets/img/addon-socks-cashmere.jpg" alt="12-Pair Cashmere Socks Box" loading="lazy" />
+                <img src="./assets/img/single_double.jpeg" alt="12-Pair Cashmere Socks Box" loading="lazy" />
               </div>
               <div class="card-body">
                 <div class="addon-title">12‑Pair Cashmere Socks Box</div>
